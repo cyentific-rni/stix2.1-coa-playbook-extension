@@ -1,0 +1,42 @@
+{
+    "type": "bundle",
+    "id": "bundle--cedfd62e-954d-4b41-ba7c-b705803f12b7",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--e06259ad-a154-4e23-bc0a-e229ccb3456f",
+            "created_by_ref": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
+            "created": "2022-01-18T23:22:03.934698Z",
+            "modified": "2022-01-18T23:22:03.934698Z",
+            "name": "playbook",
+            "description": "A course of action for CVE-2021-44228.",
+            "extensions": {
+                "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c": {
+                    "extension_type": "property-extension",
+                    "playbook_id": "playbook--cf5997e8-e387-426a-a32d-694e4f55f80b",
+                    "type": "playbook",
+                    "created": "2022-01-18T23:22:03.934698Z",
+                    "modified": "2022-01-18T23:22:03.934698Z",
+                    "playbook_creator": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
+                    "revoked": false,
+                    "labels": [
+                        "CVE-2021-44228"
+                    ],
+                    "description": "A playbook that, via SBOM processing, detects assets vulnerable to CVE-2021-44228. The same playbook will investigate if there have been attempts to exploit vulnerable assets.",
+                    "valid_from": "2022-01-18T23:22:03.934698Z",
+                    "impact": 1,
+                    "severity": 90,
+                    "priority": 0,
+                    "playbook_type": [
+                        "detection",
+                        "investigation"
+                    ],
+                    "playbook_standard": "cacao",
+                    "playbook_abstraction": "executable",
+                    "playbook_base64": "U2VjdXJpdHkgUGxheWJvb2s="
+                }
+            }
+        }
+    ]
+}
