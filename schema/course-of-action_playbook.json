@@ -38,6 +38,13 @@
                                         "playbook"
                                     ]
                                 },
+                                "extension_type": {
+                                    "type": "string",
+                                    "description": "The value of this property MUST be `property-extension`.",
+                                    "enum": [
+                                        "property-extension"
+                                    ]
+                                },
                                 "playbook_id": {
                                     "title": "id",
                                     "description": "A value that (uniquely) identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer needs to generate a UUIDv4 for the playbook."
@@ -110,7 +117,7 @@
                                     "items": {
                                         "type": "string"
                                     },
-                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, attack]"
+                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, attack]."
                                 },
                                 "playbook_standard": {
                                     "type": "string",
@@ -118,7 +125,7 @@
                                 },
                                 "playbook_abstraction": {
                                     "type": "string",
-                                    "description": "The playbook's level of abstraction. Open Vocabulary: [template, executable]"
+                                    "description": "The playbook's level of abstraction. Open Vocabulary: [template, executable]."
                                 },
                                 "playbook": {
                                     "type": "string",
