@@ -121,7 +121,7 @@
                                 },
                                 "playbook_standard": {
                                     "type": "string",
-                                    "description": "The standard the playbook conforms to (e.g., CACAO)."
+                                    "description": "The standard/format/notation the playbook conforms to (e.g., CACAO)."
                                 },
                                 "playbook_abstraction": {
                                     "type": "string",
