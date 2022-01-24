@@ -129,7 +129,7 @@
                                 },
                                 "playbook": {
                                     "type": "string",
-                                    "description": "The whole playbook in its native format (e.g., CACAO JSON). Security playbook producers and consumers use this property to share and retrieve playbooks."
+                                    "description": "The entire playbook in its native format (e.g., CACAO JSON). Security playbook producers and consumers use this property to share and retrieve playbooks."
                                 },
                                 "playbook_base64": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/binary.json",
