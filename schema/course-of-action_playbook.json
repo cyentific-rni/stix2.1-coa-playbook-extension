@@ -90,19 +90,19 @@
                                     },
                                     "minItems": 1
                                 },
-                                "impact": {
+                                "playbook_impact": {
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
                                     "description": "From 0 to 100, an integer representing the impact the playbook has on the organization. A value of 0 means specifically undefined. Values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive would have a low impact value of 1. In contrast, a playbook that performs changes such as adding rules into a firewall would have a higher impact value."
                                 },
-                                "severity": {
+                                "playbook_severity": {
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
                                     "description": "From 0 to 100, an integer representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Values range from 1, the lowest severity, to a value of 100, the highest."
                                 },
-                                "priority": {
+                                "playbook_priority": {
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
@@ -117,7 +117,7 @@
                                     "items": {
                                         "type": "string"
                                     },
-                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, attack]."
+                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, attack]"
                                 },
                                 "playbook_standard": {
                                     "type": "string",
@@ -125,7 +125,7 @@
                                 },
                                 "playbook_abstraction": {
                                     "type": "string",
-                                    "description": "The playbook's level of abstraction. Open Vocabulary: [template, executable]."
+                                    "description": "The playbook's level of abstraction. Open Vocabulary: [template, executable]"
                                 },
                                 "playbook": {
                                     "type": "string",

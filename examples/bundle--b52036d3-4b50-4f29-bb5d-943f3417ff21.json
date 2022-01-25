@@ -57,9 +57,9 @@
                     ],
                     "description": "A playbook that, via SBOM processing, detects assets vulnerable to CVE-2021-44228. The same playbook will investigate if there have been attempts to exploit vulnerable assets.",
                     "valid_from": "2022-01-18T23:22:03.934698Z",
-                    "impact": 1,
-                    "severity": 90,
-                    "priority": 0,
+                    "playbook_impact": 1,
+                    "playbook_severity": 90,
+                    "playbook_priority": 0,
                     "playbook_type": [
                         "detection",
                         "investigation"

@@ -32,9 +32,9 @@ The illustration above concisely explains what comprises an Extension Definition
 | **playbook_severity** (optional)| `integer` | From 0 to 100, an integer representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Values range from 1, the lowest severity, to a value of 100, the highest. |
 | **playbook_priority** (optional)| `integer` | From 0 to 100, an integer representing the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Values range from 1, the highest priority, to a value of 100, the lowest. |
 | **organization_type** (optional)| `list` of type `open-vocab` | The type of organization that the playbook is intended for. The value for this property **SHOULD** come from the `industry-sector-ov` open vocabulary.|
-| **playbook_type** (optional)| `list` of type `open-vocab` | The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: `[notification, detection, investigation, prevention, mitigation, remediation,attack]`. |
+| **playbook_type** (optional)| `list` of type `open-vocab` | The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: `[notification, detection, investigation, prevention, mitigation, remediation,attack]` |
 | **playbook_standard** (required)| `string` | The standard/format/nota tion the playbook conforms to (e.g., CACAO). |
-| **playbook_abstraction** (optional)| `open-vocab` | The playbook’s level of abstraction. Open Vocabulary: `[template, executable]`. |
+| **playbook_abstraction** (optional)| `open-vocab` | The playbook’s level of abstraction. Open Vocabulary: `[template, executable]` |
 | **playbook** (optional)| `string` | The entire playbook in its native format (e.g., CACAO JSON). Security playbook producers and consumers use this property to share and retrieve playbooks. |
 | **playbook_base64** (optional)| `binary` | The entire playbook encoded in base64. Security playbook producers and consumers of playbooks use this property to share and retrieve playbooks.
 
