@@ -14,7 +14,7 @@ The illustration above concisely explains what comprises an Extension Definition
 - [Extension Definition Object](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/extension-definition)
 - [Normative Definition of the Extension - JSON Schema](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/schema)
 
-### Properties that Comprise the Nested Property Extension of COA SDO to Support Sharing Machine-Readable Security Playbooks:
+### Properties that Comprise the Nested Property Extension of the COA SDO to Support Sharing Machine-Readable Security Playbooks:
 | Property Name | Data Type | Description |
 | :--- | :--- |:--- |
 | **type** (required)| `string` | The value of this property **MUST** be `playbook`. |
