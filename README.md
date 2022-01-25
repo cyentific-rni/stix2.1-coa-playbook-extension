@@ -1,4 +1,18 @@
-## A STIX 2.1 Extension for Sharing Security Playbooks Through the Course of Action SDO
+## A STIX 2.1 Extension Definition for Sharing Machine-Readable Security Playbooks through the Course of Action SDO
+
+**This repository includes a STIX 2.1 nested property extension that augments the Course of Action (COA) STIX Domain Object (SDO) type with properties that allow describing, embedding, and sharing machine-readable security playbooks**. 
+
+The decision to extend the Course of Action SDO was based on the facts that the terms security playbook and course of action are semantically very close (i.e., security playbook can be a subclass of course of action) and that extending an object allows making use of the existing specification-defined relationships, such as the ones between the Course of Action and other objects. In addition, a nested property extension allows a Course of Action instance to accommodate multiple playbooks of the same or different formats and creators and can be easily revoked or updated at a sub-component level when needed.
+
+
+![](https://github.com/fovea-research/stix2.1-coa-playbook-extension/blob/main/images/STIX2.1-nested-property-extension.jpg)
+
+The illustration above concisely explains what comprises an Extension Definition. The blue rectangles represent an instance of a COA SDO type with an extension. The red rectangle represents the associated Extension Definition object that provides information about the new or extended object type. The amber rectangle captures the normative definition of the extension, and it is a JSON schema.
+
+### Extension Definition Files:
+- [Example Instances](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/examples)
+- [Extension Definition Object](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/extension-definition)
+- [Normative Definition of the Extension - JSON Schema](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/schema)
 
 ### Properties that Comprise the Nested Property Extension of COA SDO to Support Sharing Machine-Readable Security Playbooks:
 | Property Name | Data Type | Description |
@@ -23,3 +37,10 @@
 | **playbook_abstraction** (optional)| `open-vocab` | The playbook’s level of abstraction. Open Vocabulary: `[template, executable]`. |
 | **playbook** (optional)| `string` | The entire playbook in its native format (e.g., CACAO JSON). Security playbook producers and consumers use this property to share and retrieve playbooks. |
 | **playbook_base64** (optional)| `binary` | The entire playbook encoded in base64. Security playbook producers and consumers of playbooks use this property to share and retrieve playbooks.
+
+
+
+## Maintainers
+- Vasileios Mavroeidis
+
+- Mateusz Zych
