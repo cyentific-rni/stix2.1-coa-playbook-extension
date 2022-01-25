@@ -9,12 +9,16 @@ The decision to extend the Course of Action SDO was based on the facts that the 
 
 The illustration above concisely explains what comprises an Extension Definition. The blue rectangles represent an instance of a COA SDO type with an extension. The red rectangle represents the associated Extension Definition object that provides information about the new or extended object type. The amber rectangle captures the normative definition of the extension, and it is a JSON schema.
 
+### Reading Material
+
+A technical report that explains in detail the extension can be found [HERE](https://docs.google.com/document/d/1KzEgviVLolA6Yt7YWfAv9f6TSMD33WgSo-US3YSHtyc/edit?usp=sharing).
+
 ### Extension Definition Files:
 - [Example Instances](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/examples)
 - [Extension Definition Object](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/extension-definition)
 - [Normative Definition of the Extension - JSON Schema](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/schema)
 
-### Properties that Comprise the Nested Property Extension of the COA SDO to Support Sharing Machine-Readable Security Playbooks:
+### Properties that Comprise the Nested Property Extension of the COA SDO to Support Sharing Machine-Readable Security Playbooks
 | Property Name | Data Type | Description |
 | :--- | :--- |:--- |
 | **type** (required)| `string` | The value of this property **MUST** be `playbook`. |
