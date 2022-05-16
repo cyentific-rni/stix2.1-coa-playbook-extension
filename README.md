@@ -48,4 +48,4 @@ A technical report that explains in detail the extension can be found [HERE](htt
 ## Maintainers
 - [Vasileios-Mavroeidis](https://github.com/Vasileios-Mavroeidis)
 
-- Mateusz Zych
+- [Mateusz Zych](https://www.linkedin.com/in/mateuszzych/)

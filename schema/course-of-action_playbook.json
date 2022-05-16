@@ -50,7 +50,7 @@
                                     "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer SHOULD generate a UUIDv4 for the playbook."
                                 },
                                 "created": {
-                                    "description": "The timestamp at which the extension (sub-component instance) was created. This may be different than the time at which the parent COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The timestamp at which the extension (sub-component instance) was created. This may be different than the time at which the 'parent' COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "modified": {
@@ -133,7 +133,7 @@
                                 },
                                 "playbook_abstraction": {
                                     "type": "string",
-                                    "description": "The playbook’s level of abstraction (with regards to consumption). Open Vocabulary: [template, executable]"
+                                    "description": "The playbook's level of abstraction (with regards to consumption). Open Vocabulary: [template, executable]"
                                 },
                                 "playbook_bin": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/binary.json",
@@ -141,8 +141,8 @@
                                 }
                             },
                             "required": [
-                                "extension_type",
                                 "type",
+                                "extension_type",
                                 "playbook_id",
                                 "created",
                                 "modified",

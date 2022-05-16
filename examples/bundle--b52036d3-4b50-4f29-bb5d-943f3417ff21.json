@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--b52036d3-4b50-4f29-bb5d-943f3417ff21",
+    "id": "bundle--c9661f66-3ff5-4431-9d52-64e18cc2c0b7",
     "objects": [
         {
             "type": "extension-definition",
@@ -8,11 +8,11 @@
             "id": "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c",
             "created_by_ref": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
             "created": "2022-01-18T23:22:03.933931Z",
-            "modified": "2022-01-18T23:22:03.933931Z",
+            "modified": "2022-05-16T13:43:01.945972Z",
             "name": "Course of Action extension for Security Playbooks",
             "description": "This extension definition extends the Course of Action SDO with additional properties for representing, managing, and sharing machine-readable security playbooks.",
             "schema": "https://raw.githubusercontent.com/fovea-research/stix2.1-coa-playbook-extension/main/schema/course-of-action_playbook.json",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "extension_types": [
                 "property-extension"
             ],
@@ -40,7 +40,7 @@
             "id": "course-of-action--e06259ad-a154-4e23-bc0a-e229ccb3456f",
             "created_by_ref": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
             "created": "2022-01-18T23:22:03.934698Z",
-            "modified": "2022-01-18T23:22:03.934698Z",
+            "modified": "2022-05-16T13:25:03.933698Z",
             "name": "playbook",
             "description": "A course of action for CVE-2021-44228.",
             "extensions": {
@@ -56,7 +56,8 @@
                         "CVE-2021-44228"
                     ],
                     "description": "A playbook that, via SBOM processing, detects assets vulnerable to CVE-2021-44228. The same playbook will investigate if there have been attempts to exploit vulnerable assets.",
-                    "valid_from": "2022-01-18T23:22:03.934698Z",
+                    "valid_from": "2022-03-18T00:00:00.000000Z",
+                    "playbook_creation_time": "2022-02-21T20:12:33.432637Z",
                     "playbook_impact": 1,
                     "playbook_severity": 90,
                     "playbook_priority": 0,
