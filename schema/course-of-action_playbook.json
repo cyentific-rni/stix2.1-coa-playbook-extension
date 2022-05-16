@@ -47,22 +47,30 @@
                                 },
                                 "playbook_id": {
                                     "title": "id",
-                                    "description": "A value that (uniquely) identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer needs to generate a UUIDv4 for the playbook."
+                                    "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer SHOULD generate a UUIDv4 for the playbook."
                                 },
                                 "created": {
-                                    "description": "The time at which the extension (sub-component instance) was created. This may be different from the time at which the 'parent' COA object instance was created. The timstamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The timestamp at which the extension (sub-component instance) was created. This may be different than the time at which the parent COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "modified": {
-                                    "description": "The time that this particular version of the extension (sub-component instance) was last modified. The timstamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The timestamp at which the extension (sub-component instance) was last modified. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
+                                },
+                                "playbook_creation_time": {
+                                    "description": "The timestamp at which the playbook was originally created. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
+                                },
+                                "playbook_modification_time": {
+                                    "description": "The timestamp at which the playbook was last modified. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "revoked": {
                                     "type": "boolean",
-                                    "description": "A boolean that identifies if the extension (sub-component instance) is no longer valid."
+                                    "description": "A boolean that identifies if the playbook (COA sub-component instance) is no longer valid."
                                 },
                                 "playbook_creator": {
-                                    "description": "The identifier of the entity that created this playbook.",
+                                    "description": "The identifier of the entity that created the playbook.",
                                     "pattern": "^identity--",
                                     "allOf": [
                                         {
@@ -70,13 +78,13 @@
                                         }
                                     ]
                                 },
-                                "valid_from": {
+                                "playbook_valid_from": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json",
-                                    "description": "The time from which the playbook is considered valid and the steps that it contains can be executed. The timstamp value MUST be precise to the nearest millisecond."
+                                    "description": "The timestamp from which the playbook is considered valid and the steps that it contains can be executed. The timestamp value MUST be precise to the nearest millisecond."
                                 },
-                                "valid_until": {
+                                "playbook_valid_until": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json",
-                                    "description": "The time at which this playbook should no longer be considered a valid playbook to be executed. The timstamp value MUST be precise to the nearest millisecond."
+                                    "description": "The timestamp from which the playbook should no longer be considered a valid playbook to be executed. The timestamp value MUST be precise to the nearest millisecond."
                                 },
                                 "description": {
                                     "type": "string",
@@ -84,7 +92,7 @@
                                 },
                                 "labels": {
                                     "type": "array",
-                                    "description": "An set of labels for the playbook.",
+                                    "description": "A set of labels for the playbook (e.g., adversary persona names, associated groups, or malware family/variant/name that this playbook is related to).",
                                     "items": {
                                         "type": "string"
                                     },
@@ -94,44 +102,40 @@
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
-                                    "description": "From 0 to 100, an integer representing the impact the playbook has on the organization. A value of 0 means specifically undefined. Values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive would have a low impact value of 1. In contrast, a playbook that performs changes such as adding rules into a firewall would have a higher impact value."
+                                    "description": "From 0 to 100, an integer representing the impact the playbook has on the organization. A value of 0 means specifically undefined. Impact values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive could have a low impact value of 1. In contrast, a playbook that performs changes such as adding rules into a firewall should have a higher impact value."
                                 },
                                 "playbook_severity": {
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
-                                    "description": "From 0 to 100, an integer representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Values range from 1, the lowest severity, to a value of 100, the highest."
+                                    "description": "From 0 to 100, an integer representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Severity values range from 1, the lowest severity, to a value of 100, the highest."
                                 },
                                 "playbook_priority": {
                                     "type": "integer",
                                     "minimum": 0,
                                     "maximum": 100,
-                                    "description": "From 0 to 100, an integer representing the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Values range from 1, the highest priority, to a value of 100, the lowest."
+                                    "description": "From 0 to 100, an integer representing the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Priority values range from 1, the highest priority, to a value of 100, the lowest."
                                 },
                                 "organization_type": {
                                     "type": "string",
-                                    "description": "The type of organization that the playbook is intended for. The value for this property SHOULD come from the 'industry-sector-ov' open vocabulary."
+                                    "description": "The type of organization that the playbook is intended for. The value for this property SHOULD come from the industry-sector-ov open vocabulary."
                                 },
                                 "playbook_type": {
                                     "type": "array",
                                     "items": {
                                         "type": "string"
                                     },
-                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, attack]"
+                                    "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). The open vocabulary is based on the available options in the CACAO standard and NIST SP 800-61 rev2. Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, analysis, containment, eradication, recovery, attack]"
                                 },
                                 "playbook_standard": {
                                     "type": "string",
-                                    "description": "The standard/format/notation the playbook conforms to (e.g., CACAO)."
+                                    "description": "The standard/format/notation the playbook conforms to (e.g., CACAO, BPMN)."
                                 },
                                 "playbook_abstraction": {
                                     "type": "string",
-                                    "description": "The playbook's level of abstraction. Open Vocabulary: [template, executable]"
+                                    "description": "The playbook’s level of abstraction (with regards to consumption). Open Vocabulary: [template, executable]"
                                 },
-                                "playbook": {
-                                    "type": "string",
-                                    "description": "The entire playbook in its native format (e.g., CACAO JSON). Security playbook producers and consumers use this property to share and retrieve playbooks."
-                                },
-                                "playbook_base64": {
+                                "playbook_bin": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/binary.json",
                                     "description": "The entire playbook encoded in base64. Security playbook producers and consumers of playbooks use this property to share and retrieve playbooks."
                                 }
@@ -142,7 +146,6 @@
                                 "playbook_id",
                                 "created",
                                 "modified",
-                                "playbook_creator",
                                 "playbook_standard"
                             ]
                         }
