@@ -25,13 +25,13 @@ A technical report that explains in detail the extension can be found [HERE](htt
 | **extension_type** (required) | `string` | The value of this property **MUST** be `property-extension`. |
 | **playbook_id** (required)| `string` | A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id **SHOULD** use the same identifier (value). If not, the producer **SHOULD** generate a UUIDv4 for the playbook. |
 | **description** (optional)| `string` | An explanation, details, and more context about what this playbook does and tries to accomplish. |
-| **created** (required)| `timestamp` | The date and time at which the extension (sub-component instance) was created. This may be different than the time at which the "parent" COA object instance was created. |
-| **modified** (required)| `timestamp` | The date and time at which the extension (sub-component instance) was last modified. |
+| **created** (required)| `timestamp` | The time at which the extension (sub-component instance) was created. This may be different than the time at which the "parent" COA object instance was created. |
+| **modified** (required)| `timestamp` | The time at which the extension (sub-component instance) was last modified. |
 | **revoked** (optional)| `boolean` | A boolean that identifies if the playbook (COA sub-component instance) is no longer valid. |
-| **playbook_creation_datetime** (optional)| `timestamp` | The date and time at which the playbook was originally created. |
-| **playbook_modification_datetime** (optional)| `timestamp` | The date and time at which the playbook was last modified. |
-| **playbook_valid_from** (optional)| `timestamp` | The date and time from which the playbook is considered valid and the steps that it contains can be executed. |
-| **playbook_valid_until** (optional)| `timestamp` | The date and time from which the playbook should no longer be considered a valid playbook to be executed. |
+| **playbook_creation_time** (optional)| `timestamp` | The time at which the playbook was originally created. |
+| **playbook_modification_time** (optional)| `timestamp` | The time at which the playbook was last modified. |
+| **playbook_valid_from** (optional)| `timestamp` | The time from which the playbook is considered valid and the steps that it contains can be executed. |
+| **playbook_valid_until** (optional)| `timestamp` | The time from which the playbook should no longer be considered a valid playbook to be executed. |
 | **playbook_creator** (optional)| `identifier` | The identifier of the entity that created the playbook. |
 | **labels** (optional)| `list` of type `string` | A set of labels for the playbook (e.g., adversary persona names, associated groups, or malware family/variant/name that this playbook is related to). |
 | **organization_type** (optional)| `list` of type `open-vocab` | The type of organization that the playbook is intended for. The value for this property **SHOULD** come from the `industry-sector-ov` open vocabulary.|
