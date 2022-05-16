@@ -17,7 +17,7 @@
                     "playbook_id": "playbook--cf5997e8-e387-426a-a32d-694e4f55f80b",
                     "type": "playbook",
                     "created": "2022-01-18T23:22:03.934698Z",
-                    "modified": "2022-01-18T23:22:03.934698Z",
+                    "modified": "2022-05-16T13:25:03.933698Z",
                     "playbook_creator": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
                     "revoked": false,
                     "labels": [
@@ -25,7 +25,7 @@
                     ],
                     "description": "A playbook that, via SBOM processing, detects assets vulnerable to CVE-2021-44228. The same playbook will investigate if there have been attempts to exploit vulnerable assets.",
                     "valid_from": "2022-03-18T00:00:00.000000Z",
-                    "playbook_creation_time": "2022-02-21T20:12:33.432637Z",
+                    "playbook_creation_time": "2022-01-09T08:00:33.432637Z",
                     "playbook_impact": 1,
                     "playbook_severity": 90,
                     "playbook_priority": 0,
