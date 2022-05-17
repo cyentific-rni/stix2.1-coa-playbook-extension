@@ -11,9 +11,11 @@ The illustration above concisely explains what comprises an Extension Definition
 
 ### Reading Material
 
-A technical report that explains in detail the extension can be found [HERE](https://arxiv.org/abs/2203.04136).
+A technical report that explains in detail the extension can be found at [arxiv.org](https://arxiv.org/abs/2203.04136). 
 
-### Extension Definition Files:
+**Please note that the authoritative source of this work is this Github repository and its [README.md](https://github.com/fovea-research/stix2.1-coa-playbook-extension#readme) file and not the technical report that may not be up-to-date.**
+
+### Extension Definition Related Files:
 - [Example Instances](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/examples)
 - [Extension Definition Object](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/extension-definition)
 - [Normative Definition of the Extension - JSON Schema](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/schema)
