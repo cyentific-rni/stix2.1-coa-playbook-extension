@@ -47,22 +47,22 @@
                                 },
                                 "playbook_id": {
                                     "title": "id",
-                                    "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer SHOULD generate a UUIDv4 for the playbook."
+                                    "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer MAY generate a unique identifier for the playbook."
                                 },
                                 "created": {
-                                    "description": "The timestamp at which the extension (sub-component instance) was created. This may be different than the time at which the 'parent' COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The time at which the extension (sub-component instance) was created. This may be different than the time at which the parent COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "modified": {
-                                    "description": "The timestamp at which the extension (sub-component instance) was last modified. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The time at which the extension (sub-component instance) was last modified. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "playbook_creation_time": {
-                                    "description": "The timestamp at which the playbook was originally created. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The time at which the playbook was originally created. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "playbook_modification_time": {
-                                    "description": "The timestamp at which the playbook was last modified. The timestamp value MUST be precise to the nearest millisecond.",
+                                    "description": "The time at which the playbook was last modified. The timestamp value MUST be precise to the nearest millisecond.",
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json"
                                 },
                                 "revoked": {
@@ -80,11 +80,11 @@
                                 },
                                 "playbook_valid_from": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json",
-                                    "description": "The timestamp from which the playbook is considered valid and the steps that it contains can be executed. The timestamp value MUST be precise to the nearest millisecond."
+                                    "description": "The time from which the playbook is considered valid and the steps that it contains can be executed. The timestamp value MUST be precise to the nearest millisecond."
                                 },
                                 "playbook_valid_until": {
                                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/timestamp.json",
-                                    "description": "The timestamp from which the playbook should no longer be considered a valid playbook to be executed. The timestamp value MUST be precise to the nearest millisecond."
+                                    "description": "The time from which the playbook should no longer be considered a valid playbook to be executed. The timestamp value MUST be precise to the nearest millisecond."
                                 },
                                 "description": {
                                     "type": "string",
