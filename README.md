@@ -43,7 +43,7 @@ A technical report that explains in detail the extension can be found at [arxiv.
 | **playbook_impact** (optional)| `integer` | From 0 to 100, an integer representing the impact the playbook has on the organization. A value of 0 means specifically undefined. Impact values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive could have a low impact value of 1. In contrast, a playbook that performs changes such as adding rules into a firewall should have a higher impact value. |
 | **playbook_severity** (optional)| `integer` | From 0 to 100, an integer representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Severity values range from 1, the lowest severity, to a value of 100, the highest. |
 | **playbook_priority** (optional)| `integer` | From 0 to 100, an integer representing the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Priority values range from 1, the highest priority, to a value of 100, the lowest. |
-| **playbook_bin** (optional)| `binary` | The entire playbook encoded in base64. Security playbook producers and consumers of playbooks use this property to share and retrieve playbooks.
+| **playbook_bin** (optional)| `binary` | The entire playbook encoded in base64. Security playbook producers and consumers use this property to share and retrieve playbooks.
 
 
 
