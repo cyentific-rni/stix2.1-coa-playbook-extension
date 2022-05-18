@@ -145,8 +145,7 @@
                                 "extension_type",
                                 "playbook_id",
                                 "created",
-                                "modified",
-                                "playbook_standard"
+                                "modified"
                             ]
                         }
                     ]
