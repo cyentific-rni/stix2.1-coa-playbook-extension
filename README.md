@@ -1,6 +1,6 @@
 ## A STIX 2.1 Extension Definition for Sharing Machine-Readable Security Playbooks and Orchestration Workflows via the Course of Action SDO
 
-**This repository includes a STIX 2.1 nested property extension that augments the Course of Action (COA) STIX Domain Object (SDO) type to enable describing, structuring, embedding, storing, and sharing machine-readable security playbooks and orchestration workflows**. 
+**This repository includes a STIX 2.1 nested property extension that augments the Course of Action (COA) STIX Domain Object (SDO) type to enable describing, embedding, storing, managing, and sharing cybersecurity playbooks and orchestration workflows**. 
 
 The decision to extend the Course of Action SDO was based on the facts that the terms security playbook and course of action are semantically very close (i.e., security playbook can be a subclass of course of action) and that extending an object allows making use of the existing specification-defined relationships, such as the ones between the Course of Action and other objects. In addition, a nested property extension allows a Course of Action instance to accommodate multiple playbooks of the same or different formats and creators and can be easily revoked or updated at a sub-component level when needed.
 
