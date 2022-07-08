@@ -125,6 +125,7 @@
                                     "items": {
                                         "type": "string"
                                     },
+                                    "minItems": 1,
                                     "description": "The security-related functions the playbook addresses. A playbook may account for multiple types (e.g., detection and investigation). The open vocabulary is based on the available options in the CACAO standard and NIST SP 800-61 rev2. Open Vocabulary: [notification, detection, investigation, prevention, mitigation, remediation, analysis, containment, eradication, recovery, attack]"
                                 },
                                 "playbook_standard": {
@@ -147,7 +148,8 @@
                                 "created",
                                 "modified",
                                 "playbook_standard"
-                            ]
+                            ],
+                            "additional_properties": false
                         }
                     ]
                 }
