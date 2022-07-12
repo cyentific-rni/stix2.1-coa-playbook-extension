@@ -36,7 +36,7 @@ A technical report that explains in detail the extension can be found at [arxiv.
 | **playbook_valid_until** (optional)| `timestamp` | The time from which the playbook should no longer be considered a valid playbook to be executed. |
 | **playbook_creator** (optional)| `identifier` | The identifier of the entity that created the playbook. |
 | **labels** (optional)| `list` of type `string` | A set of labels for the playbook (e.g., adversary persona names, associated groups, or malware family/variant/name that this playbook is related to). |
-| **organization_type** (optional)| `list` of type `open-vocab` | The type of organization that the playbook is intended for. The value for this property **SHOULD** come from the `industry-sector-ov` open vocabulary.|
+| **organization_type** (optional)| `list` of type `open-vocab` | The type of organization that the playbook is intended for. The value for this property **SHOULD** come from the `industry-sector-ov` open vocabulary as defined in STIX Version 2.1.|
 | **playbook_standard** (optional)| `string` | The standard/format/notation the playbook conforms to (e.g., CACAO, BPMN). |
 | **playbook_abstraction** (optional)| `open-vocab` | The playbook’s level of abstraction (with regards to consumption). Open Vocabulary: `[template, executable]` |
 | **playbook_type** (optional)| `list` of type `open-vocab` | The security-related functions the playbook supports. A playbook may account for multiple types (e.g., detection and investigation). The open vocabulary is based on the available options in the CACAO standard and NIST SP 800-61 rev2. Open Vocabulary: `[notification, detection, investigation, prevention, mitigation, remediation, analysis, containment, eradication, recovery, attack]` |
