@@ -25,11 +25,11 @@ A technical report that explains in detail the extension can be found at [arxiv.
 | :--- | :--- |:--- |
 | **type** (required)| `string` | The value of this property **MUST** be `playbook`. |
 | **extension_type** (required) | `string` | The value of this property **MUST** be `property-extension`. |
-| **playbook_id** (required)| `string` | A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id property **SHOULD** use the same identifier. If not, the producer **MAY** generate a unique identifier for the playbook. |
+| **playbook_id** (required)| `string` | A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id property **SHOULD** use the same identifier. Otherwise, the producer **MUST** generate a unique identifier for the playbook. |
 | **description** (optional)| `string` | An explanation, details, and more context about what this playbook does and tries to accomplish. |
-| **created** (required)| `timestamp` | The time at which the playbook extension (sub-component instance) was created. This may be different than the time at which the "parent" COA object instance was created. |
-| **modified** (required)| `timestamp` | The time at which the playbook extension (sub-component instance) was last modified. |
-| **revoked** (optional)| `boolean` | A boolean that identifies if the playbook extension (sub-component instance) is no longer valid. |
+| **created** (required)| `timestamp` | The time at which the playbook extension (instance) was created. This may be different than the time at which the "parent" COA object instance was created. |
+| **modified** (required)| `timestamp` | The time at which the playbook extension (instance) was last modified. A modification in the extension requires updating the property **modified** in both the extension and the “parent” Course of Action object. |
+| **revoked** (optional)| `boolean` | A boolean that identifies if the playbook extension (instance) is no longer valid. |
 | **playbook_creation_time** (optional)| `timestamp` | The time at which the playbook was originally created. |
 | **playbook_modification_time** (optional)| `timestamp` | The time at which the playbook was last modified. |
 | **playbook_valid_from** (optional)| `timestamp` | The time from which the playbook is considered valid and the steps that it contains can be executed. |
