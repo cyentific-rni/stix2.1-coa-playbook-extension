@@ -13,7 +13,7 @@ The illustration above concisely explains what comprises an Extension Definition
 
 A technical report that explains in detail the extension can be found at [arxiv.org](https://arxiv.org/abs/2203.04136). 
 
-**Please note that the authoritative source of this work is this Github repository and its [README.md](https://github.com/fovea-research/stix2.1-coa-playbook-extension#readme) file and not the technical report that may not be up-to-date.**
+**Please note that the authoritative source of this work is this Github repository and its [README.md](https://github.com/fovea-research/stix2.1-coa-playbook-extension#readme) file and not the technical report mentioned above and uploaded on arxiv.**
 
 ### Extension Definition Related Files:
 - [Example Instances](https://github.com/fovea-research/stix2.1-coa-playbook-extension/tree/main/examples)
