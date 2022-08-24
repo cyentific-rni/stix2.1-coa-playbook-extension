@@ -47,7 +47,7 @@
                                 },
                                 "playbook_id": {
                                     "title": "id",
-                                    "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value). If not, the producer MAY generate a unique identifier for the playbook."
+                                    "description": "A value that uniquely identifies the playbook."
                                 },
                                 "created": {
                                     "description": "The time at which the extension (sub-component instance) was created. This may be different than the time at which the parent COA object instance was created. The timestamp value MUST be precise to the nearest millisecond.",
