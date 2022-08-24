@@ -25,7 +25,7 @@ A technical report that explains in detail the extension can be found at [arxiv.
 | :--- | :--- |:--- |
 | **type** (required)| `string` | The value of this property **MUST** be `playbook`. |
 | **extension_type** (required) | `string` | The value of this property **MUST** be `property-extension`. |
-| **playbook_id** (required)| `string` | A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook_id property **SHOULD** use the same identifier. Otherwise, the producer **MUST** generate a unique identifier for the playbook. |
+| **playbook_id** (required)| `id` | A value that uniquely identifies the playbook.|
 | **description** (optional)| `string` | An explanation, details, and more context about what this playbook does and tries to accomplish. |
 | **created** (required)| `timestamp` | The time at which the playbook extension (instance) was created. This may be different than the time at which the "parent" COA object instance was created. |
 | **modified** (required)| `timestamp` | The time at which the playbook extension (instance) was last modified. A modification in the extension requires updating the property **modified** in both the extension and the “parent” Course of Action object. |
