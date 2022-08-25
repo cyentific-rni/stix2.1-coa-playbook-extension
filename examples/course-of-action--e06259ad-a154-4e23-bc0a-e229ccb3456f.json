@@ -8,7 +8,7 @@
             "id": "course-of-action--e06259ad-a154-4e23-bc0a-e229ccb3456f",
             "created_by_ref": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
             "created": "2022-01-18T23:22:03.934698Z",
-            "modified": "2022-05-16T13:25:03.933698Z",
+            "modified": "2022-08-25T19:14:15.437976Z",
             "name": "playbook",
             "description": "A course of action for CVE-2021-44228.",
             "extensions": {
@@ -16,7 +16,7 @@
                     "extension_type": "property-extension",
                     "playbook_id": "cf5997e8-e387-426a-a32d-694e4f55f80b",
                     "created": "2022-01-18T23:22:03.934698Z",
-                    "modified": "2022-05-16T13:25:03.933698Z",
+                    "modified": "2022-08-25T19:14:15.437976Z",
                     "playbook_creator": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
                     "revoked": false,
                     "labels": [

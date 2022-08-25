@@ -23,7 +23,6 @@ A technical report that explains in detail the extension can be found at https:/
 ### Properties that Comprise the Nested Property Extension of the COA SDO to Support Sharing Machine-Readable Security Playbooks
 | Property Name | Data Type | Description |
 | :--- | :--- |:--- |
-| **type** (required)| `string` | The value of this property **MUST** be `playbook`. |
 | **extension_type** (required) | `string` | The value of this property **MUST** be `property-extension`. |
 | **playbook_id** (optional)| `string` | A value that (uniquely) identifies the playbook. If the playbook itself embeds an identifier then the playbook_id SHOULD use the same identifier (value) for correlation purposes.|
 | **description** (optional)| `string` | An explanation, details, and more context about what this playbook does and tries to accomplish. |

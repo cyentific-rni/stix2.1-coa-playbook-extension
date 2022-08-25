@@ -1,8 +1,8 @@
 {
     "$id": "https://raw.githubusercontent.com/fovea-research/stix2.1-coa-playbook-extension/main/schema/course-of-action_playbook.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "Schema for validating a security playbook extension within the COA SDO.",
-    "description": "This schema is the normative definition of the extension-definition 'extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c' that extends the STIX 2.1 Course of Action object to support sharing structured machine-readable security playbooks (otherwise known as orchestration workflows).",
+    "title": "Schema for validating the playbook extension within the COA SDO.",
+    "description": "This schema is the normative definition of the extension-definition 'extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c' that extends the STIX 2.1 Course of Action object to support sharing playbooks, otherwise known as orchestration workflows.",
     "type": "object",
     "allOf": [
         {
@@ -11,10 +11,8 @@
         {
             "properties": {
                 "extensions": {
-                    "properties": {
-                        "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c": {
-                            "$ref": "#/$defs/coa-extension"
-                        }
+                    "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c": {
+                        "$ref": "#/$defs/playbook-extension"
                     },
                     "required": [
                         "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c"
@@ -23,8 +21,11 @@
             }
         }
     ],
+    "required": [
+        "extensions"
+    ],
     "$defs": {
-        "coa-extension": {
+        "playbook-extension": {
             "type": "object",
             "description": "The set of properties that a COA instance can use to define playbooks.",
             "properties": {
@@ -128,7 +129,7 @@
                 },
                 "playbook_bin": {
                     "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/binary.json",
-                    "description": "The entire playbook encoded in base64. Security playbook producers and consumers use this property to share and retrieve playbooks."
+                    "description": "The entire playbook encoded in base64. Playbook producers and consumers use this property to share and retrieve playbooks."
                 }
             },
             "required": [

@@ -8,11 +8,11 @@
             "id": "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c",
             "created_by_ref": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
             "created": "2022-01-18T23:22:03.933931Z",
-            "modified": "2022-05-16T13:43:01.945972Z",
+            "modified": "2022-08-25T19:15:25.577633Z",
             "name": "Course of Action extension for Security Playbooks",
             "description": "This extension definition extends the Course of Action SDO with additional properties for representing, managing, and sharing machine-readable security playbooks.",
             "schema": "https://raw.githubusercontent.com/fovea-research/stix2.1-coa-playbook-extension/main/schema/course-of-action_playbook.json",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "extension_types": [
                 "property-extension"
             ],
