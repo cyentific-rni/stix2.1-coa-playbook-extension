@@ -14,8 +14,7 @@
             "extensions": {
                 "extension-definition--1e1c1bd7-c527-4215-8e18-e199e74da57c": {
                     "extension_type": "property-extension",
-                    "playbook_id": "playbook--cf5997e8-e387-426a-a32d-694e4f55f80b",
-                    "type": "playbook",
+                    "playbook_id": "cf5997e8-e387-426a-a32d-694e4f55f80b",
                     "created": "2022-01-18T23:22:03.934698Z",
                     "modified": "2022-05-16T13:25:03.933698Z",
                     "playbook_creator": "identity--ae82a5e5-ec07-4863-ad88-6504b29f24e9",
